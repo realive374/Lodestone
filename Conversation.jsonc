@@ -1,0 +1,39 @@
+{
+  "name": "Conversation",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "messages": {
+      "type": "array",
+      "title": "Messages",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "default": "text"
+          },
+          "mediaUrl": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "model_id": {
+      "type": "string",
+      "title": "Model ID"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
